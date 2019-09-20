@@ -1,0 +1,67 @@
+with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
+procedure Tic_tac is
+   type Index is range 1 .. 9;
+   Coord : Integer;
+   Win : Integer := 2;
+   type My_Array is array (1 .. 9) of String (1 .. 3);
+   Arr : My_Array := (" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 ");
+begin
+   for J in 1 .. 9 loop
+      if J = 4 or J = 7 then
+	 Put_Line("");
+      end if;	 
+      Put(Arr(J));
+      if J = 9 then
+	 Put_Line("");
+      end if;
+   end loop;
+   for I in Index loop
+      if I mod 2 = 1 then
+	 Put_Line ("Player 1, make your move!");
+	 Get(Coord);
+	 Arr(Coord) := " X ";
+      else
+	 Put_Line ("Player 2, make your move!");
+	 Get(Coord);
+	 Arr(Coord) := " O ";
+      end if;
+      for J in 1 .. 9 loop
+	 if J = 4 or J = 7 then
+	    Put_Line("");
+	 end if;	 
+	 Put(Arr(J));
+	 if J = 9 then
+	    Put_Line("");
+	 end if;
+      end loop;
+      if ((Arr(1) = " X " and Arr(2) = " X " and Arr(3) = " X ") or
+	    (Arr(4) = " X " and Arr(5) = " X " and Arr(6) = " X ") or
+	    (Arr(7) = " X " and Arr(8) = " X " and Arr(9) = " X ") or
+	    (Arr(1) = " X " and Arr(4) = " X " and Arr(7) = " X ") or
+	    (Arr(2) = " X " and Arr(5) = " X " and Arr(8) = " X ") or
+	    (Arr(3) = " X " and Arr(6) = " X " and Arr(9) = " X ") or
+	    (Arr(1) = " X " and Arr(5) = " X " and Arr(9) = " X ") or
+	    (Arr(3) = " X " and Arr(5) = " X " and Arr(7) = " X ") 
+	 ) then
+	 Put_Line("Player 1 Wins!");
+	 Win := 0;
+      end if;
+      if ((Arr(1) = " O " and Arr(2) = " O " and Arr(3) = " O ") or
+	    (Arr(4) = " O " and Arr(5) = " O " and Arr(6) = " O ") or
+	    (Arr(7) = " O " and Arr(8) = " O " and Arr(9) = " O ") or
+	    (Arr(1) = " O " and Arr(4) = " O " and Arr(7) = " O ") or
+	    (Arr(2) = " O " and Arr(5) = " O " and Arr(8) = " O ") or
+	    (Arr(3) = " O " and Arr(6) = " O " and Arr(9) = " O ") or
+	    (Arr(1) = " O " and Arr(5) = " O " and Arr(9) = " O ") or
+	    (Arr(3) = " O " and Arr(5) = " O " and Arr(7) = " O ") 
+	 ) then
+	 Put_Line("Player 2 Wins!");
+	 Win := 1;
+      end if;
+      exit when Win = 1 or Win = 0;
+   end loop;
+   if Win = 2 then
+      Put_Line("Its a tie!");
+   end if;
+end Tic_tac;

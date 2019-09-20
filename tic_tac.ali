@@ -1,0 +1,87 @@
+V "GNAT Lib v4.8"
+M P W=b
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IO
+RV SPARK
+
+U tic_tac%b		tic_tac.adb		d99d78ff NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20120716125141 10fcae55
+D a-finali.ads		20111121113555 52ecdc1b
+D a-inteio.ads		20070406091342 f64b89a4
+D a-ioexce.ads		20091130110856 8b9de6cd
+D a-stream.ads		20090409150019 2ca4ee37
+D a-tags.ads		20111212115430 6c0509d0
+D a-textio.ads		20130104124955 386df5d4
+D a-tiinio.ads		20090409150019 aa04e5d6
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20110906094621 129923ea
+D i-cstrea.ads		20130102105938 3286f6aa
+D system.ads		20140416144310 90249111
+D s-crtl.ads		20130102105938 1ea48bce
+D s-exctab.ads		20090417131547 66e51330
+D s-ficobl.ads		20120709130952 55a71d43
+D s-finmas.ads		20111024091915 b95bb341
+D s-finroo.ads		20120426095924 4ff27390
+D s-parame.ads		20110830140625 b6e20cc0
+D s-pooglo.ads		20110804083314 542f33d0
+D s-soflin.ads		20120515094619 24c8153c
+D s-stache.ads		20090417130712 596fc1b4
+D s-stalib.ads		20130104124955 f78bcf95
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stopoo.ads		20111013103733 7b8fbeee
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+D s-wchcon.ads		20090417130712 bfeb2e3d
+D tic_tac.adb		20190920233053 17bb048f
+X 1 ada.ads
+16K9*Ada 19e8 30|1r6 1r23 2r6 2r31
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[9|45] 30|2w10 2r35
+X 8 a-textio.ads
+49K13*Text_IO 471e16 30|1w10 1r27
+169U14*Skip_Line 30|64s19 67s19 95s19 98s19
+242U14*Put 30|31s7 106s10
+263U14*Put_Line 30|10s4 11s4 12s4 13s4 14s4 15s4 16s4 17s4 18s4 19s4 20s4
+. 21s4 22s4 23s4 24s4 25s4 26s4 29s10 33s10 45s16 48s19 52s19 53s19 54s19
+. 55s19 63s19 66s19 76s16 79s19 83s19 84s19 85s19 86s19 94s19 97s19 104s13
+. 108s13 120s10 121s10 122s10 134s10 135s10 136s10 142s7 143s7 144s7
+298X4*Data_Error 30|62r25 93r25
+X 9 a-tiinio.ads
+55U14*Get 30|46s16[4|18] 77s16[4|18]
+X 30 tic_tac.adb
+3U11*Tic_tac 3b11 146l5 146t12
+4I9 Index<short_short_integer> 36r13
+5i4 Win{integer} 123m10 137m10 139r17 139r28 141r7
+6i4 Count{integer} 44m16 44r25 47r19 47r34 49m19 51r19 59m16 75m16 75r25
+. 78r19 78r34 80m19 82r19 90m16
+7A9 My_Array(string)<integer> 8r10
+8a4 Arr{7A9} 31r11 58m16 89m16 106r14 111r12 111r31 111r50 112r14 112r33
+. 112r52 113r14 113r33 113r52 114r14 114r33 114r52 115r14 115r33 115r52 116r14
+. 116r33 116r52 117r14 117r33 117r52 118r14 118r33 118r52 125r12 125r31 125r50
+. 126r14 126r33 126r52 127r14 127r33 127r52 128r14 128r33 128r52 129r14 129r33
+. 129r52 130r14 130r33 130r52 131r14 131r33 131r52 132r14 132r33 132r52
+27i8 J{integer} 28r10 28r19 31r15 32r10
+36i8 I{4I9} 37r10
+42i16 Coord{integer} 46m20 58r20
+62r21 E{2|66R9}
+65r21 E{2|66R9}
+73i16 Coord{integer} 77m20 89r20
+93r21 E{2|66R9}
+96r21 E{2|66R9}
+102i11 J{integer} 103r13 103r22 106r18 107r13
+
