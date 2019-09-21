@@ -21,7 +21,7 @@ When you start the game, you are shown the rules and how to play, we won't reite
 
 Here is a nice visual for how the game plays out in the console:
 
-![Tada Gameplay](/assests/tada_gameplay.png)
+![Tada Gameplay](/assets/tada_gameplay.png)
 
 See if you can find the hidden message for really bad players (Not pictured in the above image)!
 
@@ -43,7 +43,7 @@ Here will let you peak behind the curtain at the amazing function to print out o
 
 As you can see, we are looping through 9 times, and each time printing out the value of the array which holds our board. We add a newline after 4 and 7 as they are the end  of the right side of the board. For example, the start screen will look like so:
 
-![Tada Start Screen](/assests/tada_game_start.png)
+![Tada Start Screen](/assets/tada_game_start.png)
 
 ## Closing
 
